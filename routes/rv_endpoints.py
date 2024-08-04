@@ -64,7 +64,7 @@ def get_kalender():
     events_to_return = []
     for event in detailskalender:
         events_to_return.append(event)
-    return {'spelers': events_to_return}
+    return {'kalender': events_to_return}
 
 
 @app.get("/resultaten")
@@ -76,7 +76,7 @@ def get_resultaten():
     resultaat_to_return = []
     for resultaat in detailsresultaten:
         resultaat_to_return.append(resultaat)
-    return {'spelers': resultaat_to_return}
+    return {'resultaten': resultaat_to_return}
 
 
 @app.get("/jeugdopleiding")
@@ -88,7 +88,7 @@ def get_trainingen():
     trainingen_to_return = []
     for training in detailstrainingen:
         trainingen_to_return.append(training)
-    return {'spelers': trainingen_to_return}
+    return {'jeugdopleiding': trainingen_to_return}
 
 
 @app.get("/evenementen")
@@ -100,7 +100,7 @@ def get_evenement():
     evenementen_to_return = []
     for evenement in detailsevenementen:
         evenementen_to_return.append(evenement)
-    return {'spelers': evenementen_to_return}
+    return {'evenementen': evenementen_to_return}
 
 
 @app.get("/footer")
